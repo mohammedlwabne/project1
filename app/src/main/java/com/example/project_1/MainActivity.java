@@ -13,8 +13,5 @@ private Button FragmentLogin;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.frameLayoutMain, new FragmentLogin());
-        ft.commit();
     }
 }
