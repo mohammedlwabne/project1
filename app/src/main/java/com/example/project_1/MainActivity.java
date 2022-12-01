@@ -13,5 +13,13 @@ private Button FragmentLogin;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        gotoFragmentLogin();
+
+    }
+
+    private void gotoFragmentLogin() {
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frameLayoutMain, new FragmentLogin());
+        ft.commit();
     }
 }

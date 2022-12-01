@@ -96,9 +96,12 @@ public class FragmentSignup extends Fragment {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if ( task.isSuccessful()){
+                            Toast.makeText(getActivity(), "You have successfully Signup!", Toast.LENGTH_SHORT).show();
 
                         }
                         else {
+                            Toast.makeText(getActivity(), "Field to Signup! Check user or password!", Toast.LENGTH_SHORT).show();
+
 
                         }
                     }

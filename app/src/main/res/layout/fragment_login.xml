@@ -11,40 +11,51 @@
         android:layout_height="match_parent">
 
         <EditText
-            android:id="@+id/EmailLogin"
+            android:id="@+id/etUsernameLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="181dp"
+            android:layout_marginTop="118dp"
             android:ems="10"
-            android:hint="user.."
-            android:inputType="numberDecimal"
+            android:hint="username..."
+            android:inputType="textEmailAddress"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/PasswordLogin"
+            android:id="@+id/etPasswordLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="59dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="72dp"
             android:ems="10"
-            android:hint="password.."
-            android:inputType="numberDecimal"
+            android:hint="password..."
+            android:inputType="textPassword"
             android:minHeight="48dp"
-            app:layout_constraintStart_toStartOf="@+id/EmailLogin"
-            app:layout_constraintTop_toBottomOf="@+id/EmailLogin" />
+            app:layout_constraintStart_toStartOf="@+id/etUsernameLogin"
+            app:layout_constraintTop_toBottomOf="@+id/etUsernameLogin" />
 
         <Button
-            android:id="@+id/LoginMain"
+            android:id="@+id/btnLoginLogin"
             android:layout_width="wrap_content"
-            android:onClick="Login"
             android:layout_height="wrap_content"
-            android:layout_marginTop="115dp"
+            android:layout_marginTop="83dp"
             android:text="Login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PasswordLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin" />
+
+        <TextView
+            android:id="@+id/tvSignupLinkLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:text="Signup"
+            android:textColorHint="#374CC3"
+            app:layout_constraintStart_toStartOf="@+id/btnLoginLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnLoginLogin" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
