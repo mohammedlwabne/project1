@@ -18,19 +18,23 @@ public class FirebaseServices {
         storage=FirebaseStorage.getInstance();
     }
 
-    public FirebaseAuth getAuth() {
+
+    public FirebaseAuth getAuth()
+    {
         return auth;
     }
 
-    public FirebaseFirestore getFire() {
+    public FirebaseFirestore getFire()
+    {
         return fire;
     }
 
-    public FirebaseStorage getStorage() {
+    public FirebaseStorage getStorage()
+    {
         return storage;
     }
 
-    public FirebaseServices getInstance(){
+    public static FirebaseServices getInstance(){
         if (instance==null){
             instance=new FirebaseServices();
         }
